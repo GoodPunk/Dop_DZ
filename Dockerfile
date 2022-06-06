@@ -6,4 +6,4 @@ RUN pip install -qr requirements.txt
 COPY ./app.py ./opt/webapp/
 EXPOSE 5000
 ENTRYPOINT [ "python" ]
-CMD ["/opt/webapp/app.py"]
+CMD ["python /opt/webapp/app.py"]
